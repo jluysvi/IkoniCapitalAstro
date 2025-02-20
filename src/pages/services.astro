@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <section class="relative min-h-screen pt-24">
+        <div class="container mx-auto px-4 py-16 w-[90%]">
+            <h1 class="text-center font-light text-4xl mb-16">Our Services</h1>
+
+            <!-- Main Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Private Equity Investment -->
+                <div class="bg-neutral-800 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-4 text-green-500">Private Equity Investment</h2>
+                    <p class="text-gray-300 mb-4">
+                        Direct investment in high-potential South African companies across various sectors, 
+                        focusing on businesses with strong growth prospects and sustainable competitive advantages.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Growth capital</li>
+                        <li>Management buyouts</li>
+                        <li>Acquisition financing</li>
+                        <li>Strategic partnerships</li>
+                    </ul>
+                </div>
+
+                <!-- Corporate Advisory -->
+                <div class="bg-neutral-800 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-4 text-green-500">Corporate Advisory</h2>
+                    <p class="text-gray-300 mb-4">
+                        Strategic guidance for businesses looking to optimize their operations,
+                        expand their market presence, or prepare for significant transactions.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Mergers & acquisitions</li>
+                        <li>Strategic planning</li>
+                        <li>Business restructuring</li>
+                        <li>Market entry strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Investment Focus -->
+            <div class="bg-neutral-800 p-8 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-light mb-8 text-center">Investment Focus Areas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-4 text-green-500">Agriculture & Agritech</h3>
+                        <p class="text-gray-300">Supporting sustainable agriculture and innovative farming technologies</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-4 text-green-500">Tourism & Hospitality</h3>
+                        <p class="text-gray-300">Investing in South Africa's growing tourism sector</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-4 text-green-500">Technology</h3>
+                        <p class="text-gray-300">Backing innovative tech solutions for African markets</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Criteria -->
+            <div class="bg-neutral-800 p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-light mb-8 text-center">Investment Criteria</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center text-center">
+                        <span class="text-4xl text-green-500 mb-4">R10M+</span>
+                        <p class="text-gray-300">Minimum Investment</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <span class="text-4xl text-green-500 mb-4">3-7</span>
+                        <p class="text-gray-300">Years Investment Horizon</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <span class="text-4xl text-green-500 mb-4">20%+</span>
+                        <p class="text-gray-300">Target IRR</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <span class="text-4xl text-green-500 mb-4">51%+</span>
+                        <p class="text-gray-300">Preferred Ownership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout>
+    <section class="relative min-h-screen pt-24">
+        <div class="container mx-auto px-4 py-16 w-[90%]">
+            <h1 class="text-center font-light text-4xl mb-16">Contact Us</h1>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Contact Information -->
+                <div class="w-full md:w-1/3 bg-neutral-800 p-8 rounded-lg shadow">
+                    <h2 class="text-3xl font-semibold mb-6">Get in Touch</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-light text-green-500 mb-2">Location</h3>
+                            <p class="text-gray-300">123 Business District</p>
+                            <p class="text-gray-300">Johannesburg, South Africa</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-light text-green-500 mb-2">Contact Details</h3>
+                            <p class="text-gray-300">Email: info@ikonicapital.com</p>
+                            <p class="text-gray-300">Phone: +27 12 345 6789</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-light text-green-500 mb-2">Business Hours</h3>
+                            <p class="text-gray-300">Monday - Friday: 8:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="w-full md:w-2/3 bg-neutral-800 p-8 rounded-lg shadow">
+                    <h2 class="text-3xl font-semibold mb-6">Send us a Message</h2>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-300 mb-2">Name</label>
+                                <input type="text" class="w-full p-3 bg-neutral-700 rounded-lg focus:ring-2 focus:ring-green-800 text-white" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-300 mb-2">Email</label>
+                                <input type="email" class="w-full p-3 bg-neutral-700 rounded-lg focus:ring-2 focus:ring-green-800 text-white" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-300 mb-2">Subject</label>
+                            <input type="text" class="w-full p-3 bg-neutral-700 rounded-lg focus:ring-2 focus:ring-green-800 text-white" required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-300 mb-2">Message</label>
+                            <textarea rows="5" class="w-full p-3 bg-neutral-700 rounded-lg focus:ring-2 focus:ring-green-800 text-white" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full md:w-auto px-8 py-3 bg-green-800 hover:bg-green-700 text-white rounded-lg transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

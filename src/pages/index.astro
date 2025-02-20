@@ -1,19 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import skyscraper from "../assets/skyscraper.webp";
 ---
 
 <Layout>
-	<div class="min-h-screen flex flex-col justify-center items-center">
-		<h1 class="font-thin text-3xl">Investing In The Future.</h1>
-	<p>
-		ikoni Capital is focused on modern, high-potential private equity
-		investments in the most critical parts of the South African economy.<br
-		/>
-		We have a vast array of industry connections that allow us to identify the
-		most lucrative investments before anyone else can.<br />
-		We have a broad portfolio, stretching from agriculture, to tourism, but there
-		are a few key principles that tie those investments together.
-	</p>
-	<a></a>
-	</div>
+    <section class="relative min-h-screen">
+        <div class="absolute inset-0 w-full h-full overflow-hidden">
+            <Image
+                src={skyscraper}
+                alt="Skyscraper background"
+                class="w-full h-full object-cover opacity-10"
+                quality={100}
+            />
+        </div>
+        <div
+            class="relative z-10 min-h-screen flex flex-col justify-center items-center"
+        >
+            <h1 class="font-thin text-6xl mb-7">Investing In The Future.</h1>
+            <p class="max-w-lg text-justify mb-7 text-md">
+                ikoni Capital is focused on modern, high-potential private
+                equity investments in the most critical parts of the South
+                African economy.<br /><br />
+
+                We have a vast array of industry connections that allow us to
+                identify the most lucrative investments before anyone else can.<br
+                /><br />
+                We have a broad portfolio, stretching from agriculture, to tourism,
+                but there are a few key principles that tie those investments together.
+            </p>
+            <a
+                href="#Portfolio"
+                class="px-4 py-3 bg-green-800 hover:bg-green-900 text-green-50"
+                >Learn More</a
+            >
+        </div>
+    </section>
+    <section></section>
 </Layout>

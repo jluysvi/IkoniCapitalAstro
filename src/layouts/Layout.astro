@@ -1,5 +1,6 @@
 ---
-import "../styles/global.csss";
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
 ---
 <!doctype html>
 <html lang="en">
@@ -10,6 +11,7 @@ import "../styles/global.csss";
 		<title>Ikoni Capital</title>
 	</head>
 	<body class="bg-neutral-900 text-white">
+		<Navbar />
 		<slot />
 	</body>
 </html>
