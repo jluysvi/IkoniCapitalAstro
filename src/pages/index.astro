@@ -2,6 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import skyscraper from "../assets/skyscraper.webp";
+import power from "../assets/power.jpg";
+import farmland from "../assets/farmland.jpg";
+import media from "../assets/media.jpg";
+import apartment from "../assets/apartment.jpg";
+import pub from "../assets/pub.jpg";
 ---
 
 <Layout>
@@ -17,18 +22,20 @@ import skyscraper from "../assets/skyscraper.webp";
         <div
             class="relative z-10 min-h-screen flex flex-col justify-center items-center"
         >
-            <h1 class="font-thin text-6xl mb-7">Investing In The Future.</h1>
-            <p class="max-w-lg text-justify mb-7 text-md">
-                Founded in 2017 by visionary entrepeneur Phumudzo Makhado in
-                South Africa, Ikoni Capital is a dynamic intestment holding
-                company commited to driving transformation and sustainable
-                development accross the region.
-                <br />
-                <br />
-                With a diversified investment portfolio spanning agriculture, digital
-                media, student housing, hospitality, and renewable energy, Ikoni
-                Capital stands as a catalyst for progress in South Africa, Southern
-                Africa, and the contitent at large.
+            <h1 class="font-thin text-6xl mb-7 text-center">
+                Investing in Transformation, <br /> Empowering the Future.
+            </h1>
+            <p class="max-w-xl text-justify mb-7 text-lg">
+                At Ikoni Capital, we are more than an investment holding
+                company—we are a catalyst for sustainable development and
+                economic transformation across Africa. Founded in 2017 by
+                Phumudzo Makhado, we strategically invest in agriculture,
+                digital media, student housing, hospitality, and renewable
+                energy to drive lasting impact. Our vision is to empower
+                communities, fuel innovation, and shape a resilient future
+                through responsible investments that create real value. Join us
+                as we build a prosperous, sustainable tomorrow—one investment at
+                a time.
             </p>
             <a
                 href="#InvestmentAreas"
@@ -46,163 +53,213 @@ import skyscraper from "../assets/skyscraper.webp";
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Agriculture Card -->
                 <div
-                    class="bg-neutral-700 p-6 shadow-md hover:shadow-lg transition-shadow"
+                    class="bg-neutral-900 p-6 relative overflow-hidden border border-transparent hover:border-green-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-900/20"
                 >
-                    <div class="text-green-600 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="h-15 w-15 mx-auto"
-                            ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                            ></path><path
-                                d="M16.5 15a4.5 4.5 0 0 0 -4.5 4.5m4.5 -8.5a4.5 4.5 0 0 0 -4.5 4.5m4.5 -8.5a4.5 4.5 0 0 0 -4.5 4.5m-4 3.5c2.21 0 4 2.015 4 4.5m-4 -8.5c2.21 0 4 2.015 4 4.5m-4 -8.5c2.21 0 4 2.015 4 4.5m0 -7.5v6"
-                            ></path></svg
-                        >
+                    <div class="absolute inset-0 z-0">
+                        <Image
+                            src={farmland}
+                            alt="Agriculture background"
+                            class="w-full h-full object-cover opacity-10"
+                            quality={80}
+                        />
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-3">
-                        Agriculture
-                    </h3>
-                    <p class="text-neutral-50 text-left">
-                        We invest in sustainable agricultural practices and
-                        technologies that boost productivity, empower local
-                        farmers, and ensure food security.
-                    </p>
+                    <div class="relative z-10">
+                        <div class="text-green-600 mb-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="h-15 w-15 mx-auto"
+                                ><path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"></path><path
+                                    d="M16.5 15a4.5 4.5 0 0 0 -4.5 4.5m4.5 -8.5a4.5 4.5 0 0 0 -4.5 4.5m4.5 -8.5a4.5 4.5 0 0 0 -4.5 4.5m-4 3.5c2.21 0 4 2.015 4 4.5m-4 -8.5c2.21 0 4 2.015 4 4.5m-4 -8.5c2.21 0 4 2.015 4 4.5m0 -7.5v6"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">
+                            Agriculture
+                        </h3>
+                        <p class="text-neutral-50 text-left">
+                            We invest in sustainable agricultural practices and
+                            technologies that boost productivity, empower local
+                            farmers, and ensure food security.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Digital Media Card -->
                 <div
-                    class="bg-neutral-700 p-6 shadow-md hover:shadow-lg transition-shadow"
+                    class="bg-neutral-900 p-6 relative overflow-hidden border border-transparent hover:border-green-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-900/20"
                 >
-                    <div class="text-green-600 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-15 w-15 mx-auto"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                            ></path>
-                        </svg>
+                    <div class="absolute inset-0 z-0">
+                        <Image
+                            src={media}
+                            alt="Digital Media background"
+                            class="w-full h-full object-cover opacity-15"
+                            quality={80}
+                        />
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-3">
-                        Digital Media
-                    </h3>
-                    <p class="text-neutral-50 text-left">
-                        Embracing the digital revolution, our investments in
-                        digital media support innovative platforms and content
-                        solutions that connect, inform, and inspire diverse
-                        audiences.
-                    </p>
+                    <div class="relative z-10">
+                        <div class="text-green-600 mb-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-15 w-15 mx-auto"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">
+                            Digital Media
+                        </h3>
+                        <p class="text-neutral-50 text-left">
+                            Embracing the digital revolution, our investments in
+                            digital media support innovative platforms and
+                            content solutions that connect, inform, and inspire
+                            diverse audiences.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Student Housing Card -->
-                <div
-                    class="bg-neutral-700 p-6 shadow-md hover:shadow-lg transition-shadow"
-                >
-                    <div class="text-green-600 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-15 w-15 mx-auto"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                            ></path>
-                        </svg>
+                <div class="bg-neutral-900 p-6 relative overflow-hidden border border-transparent hover:border-green-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-900/20">
+                    <div class="absolute inset-0 z-0">
+                        <Image
+                            src={apartment}
+                            alt="Student Housing background"
+                            class="w-full h-full object-cover opacity-15"
+                            quality={80}
+                        />
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-3">
-                        Student Housing
-                    </h3>
-                    <p class="text-neutral-50 text-left">
-                        Recognizing the critical need for quality accommodation,
-                        we develop and support student housing projects that
-                        offer safe, modern, and accessible living spaces for the
-                        next generation of leaders.
-                    </p>
+                    <div class="relative z-10">
+                        <div class="text-green-600 mb-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-15 w-15 mx-auto"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">
+                            Student Housing
+                        </h3>
+                        <p class="text-neutral-50 text-left">
+                            Recognizing the critical need for quality
+                            accommodation, we develop and support student
+                            housing projects that offer safe, modern, and
+                            accessible living spaces for the next generation of
+                            leaders.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Hospitality Card -->
-                <div
-                    class="bg-neutral-700 p-6 shadow-md hover:shadow-lg transition-shadow"
-                >
-                    <div class="text-green-600 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="w-15 h-15 mx-auto"
-                            ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                            ></path><path
-                                d="M9 21h6a1 1 0 0 0 1 -1v-3.625c0 -1.397 .29 -2.775 .845 -4.025l.31 -.7c.556 -1.25 .845 -2.253 .845 -3.65v-4a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v4c0 1.397 .29 2.4 .845 3.65l.31 .7a9.931 9.931 0 0 1 .845 4.025v3.625a1 1 0 0 0 1 1z"
-                            ></path><path d="M6 8h12"></path></svg
-                        >
+                <div class="bg-neutral-900 p-6 relative overflow-hidden border border-transparent hover:border-green-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-900/20">
+                    <div class="absolute inset-0 z-0">
+                        <Image
+                            src={pub}
+                            alt="Hospitality background"
+                            class="w-full h-full object-cover opacity-15"
+                            quality={80}
+                        />
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-3">
-                        Hospitality
-                    </h3>
-                    <p class="text-neutral-50 text-left">
-                        Our ventures in hospitality focus on creating unique,
-                        high-quality experiences that celebrate local culture
-                        while driving economic growth and tourism.
-                    </p>
+                    <div class="relative z-10">
+                        <div class="text-green-600 mb-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="w-15 h-15 mx-auto"
+                                ><path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"></path><path
+                                    d="M9 21h6a1 1 0 0 0 1 -1v-3.625c0 -1.397 .29 -2.775 .845 -4.025l.31 -.7c.556 -1.25 .845 -2.253 .845 -3.65v-4a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v4c0 1.397 .29 2.4 .845 3.65l.31 .7a9.931 9.931 0 0 1 .845 4.025v3.625a1 1 0 0 0 1 1z"
+                                ></path><path d="M6 8h12"></path></svg
+                            >
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">
+                            Hospitality
+                        </h3>
+                        <p class="text-neutral-50 text-left">
+                            Our ventures in hospitality focus on creating
+                            unique, high-quality experiences that celebrate
+                            local culture while driving economic growth and
+                            tourism.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Renewable Energy Card -->
-                <div
-                    class="bg-neutral-700 p-6 shadow-md hover:shadow-lg transition-shadow"
-                >
-                    <div class="text-green-600 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-15 w-15 mx-auto"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+                <div class="bg-neutral-900 p-6 relative overflow-hidden border border-transparent hover:border-green-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-900/20">
+                    <div class="absolute inset-0 z-0">
+                        <Image
+                            src={power}
+                            alt="Renewable Energy background"
+                            class="w-full h-full object-cover opacity-15"
+                            quality={80}
+                        />
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-3">
-                        Renewable Energy
-                    </h3>
-                    <p class="text-neutral-50 text-left">
-                        Committed to a sustainable future, we invest in
-                        renewable energy projects that reduce environmental
-                        impact, promote clean energy solutions, and support
-                        long-term energy security.
-                    </p>
+                    <div class="relative z-10">
+                        <div class="text-green-600 mb-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-15 w-15 mx-auto"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-3">
+                            Renewable Energy
+                        </h3>
+                        <p class="text-neutral-50 text-left">
+                            Committed to a sustainable future, we invest in
+                            renewable energy projects that reduce environmental
+                            impact, promote clean energy solutions, and support
+                            long-term energy security.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="flex justify-center mt-8">
                 <a
                     href="#InvestmentAreas"
                     class="px-4 py-3 bg-green-800 hover:bg-green-900 text-green-50"
-                >Learn More</a>
+                    >Learn More</a
+                >
             </div>
         </div>
-
     </section>
 </Layout>
